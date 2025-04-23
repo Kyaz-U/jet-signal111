@@ -28,8 +28,7 @@ def predict_aviator_signal():
 
         # Log the prediction
         with open("logs/predictions.log", "a") as log_file:
-            log_file.write(f"[{timestamp}] Predicted: {predicted}x | Input: {recent_values}
-")
+            log_file.write(f"[{timestamp}] Predicted: {predicted}x | Input: {recent_values}\\n")
 
         return message
 
